@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto de venta</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <div class="contenido">
+        
+        <h1 style="color:#FF0000" >Punto de venta</h1>
+        <br>
+        <br>
+
+        <script type="text/javascript">
+            function valor() {
+             var n1 = document.getElementById("n1").value;
+             var n2 = document.getElementById("n2").value;
+             var res = parseInt(n1, 10) + parseInt(n2, 10);
+             document.getElementById("res").value = res;
+             }
+         </script>
+
+        <p>
+            
+            <font face="Comic Sans MS,arial,verdana" style="color:#FF0000" >Nombre del producto</font>
+            <input type="text" step="any" name="producto" placeholder="Producto" name="producto" ng-model="data.producto" title="Pon el nombre del producto">
+        </p>    
+        <p>
+            
+            <font face="Comic Sans MS,arial,verdana" style="color:#FF0000">Costo del producto</font>
+            <input type="text" id="n1" name="n1">
+                
+        </p>
+        <p>    
+            
+            <font face="Comic Sans MS,arial,verdana" style="color:#FF0000" >Cantidad del producto</font>
+            <input type="text" id="n2" name="n2">
+
+        </p>
+        
+        <p>
+            
+            <font face="Comic Sans MS,arial,verdana" style="color:#FF0000" >Calcular el total</font>
+            <input type="text" id="res">
+            <input type="button" name="suma" value="Resultado" onClick="valor()"><br>    
+        </p>    
+
+        <p>
+            <font face="Comic Sans MS,arial,verdana" style="color:#FF0000" >Compra agregada</font>
+            
+        </p>
+        
+            
+        </form>
+        
+        </div>
+</body>
+<link rel="stylesheet" href="styles.css">
+</html>
