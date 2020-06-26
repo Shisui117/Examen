@@ -6,11 +6,13 @@
     <title>Punto de venta</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="contenido">
         
-        <h1 style="color:#FF0000" >Punto de venta</h1>
+        <h1 style="color:#00f7ff" >Punto de venta</h1>
         <br>
         <br>
 
@@ -18,39 +20,41 @@
             function valor() {
              var n1 = document.getElementById("n1").value;
              var n2 = document.getElementById("n2").value;
-             var res = parseInt(n1, 10) + parseInt(n2, 10);
+             var res = parseInt(n1, 10) * parseInt(n2, 10);
              document.getElementById("res").value = res;
              }
          </script>
 
         <p>
             
-            <font face="Comic Sans MS,arial,verdana" style="color:#FF0000" >Nombre del producto</font>
-            <input type="text" step="any" name="producto" placeholder="Producto" name="producto" ng-model="data.producto" title="Pon el nombre del producto">
+            <strong face="Comic Sans MS,arial,verdana" style="color:#00f7ff" >Nombre del producto</strong>
+            <input type="text" step="any" name="producto" placeholder="Producto" name="producto" title="Pon el nombre del producto">
         </p>    
         <p>
             
-            <font face="Comic Sans MS,arial,verdana" style="color:#FF0000">Costo del producto</font>
-            <input type="text" id="n1" name="n1">
+            <strong face="Comic Sans MS,arial,verdana" style="color:#00f7ff">Costo del producto</strong>
+            <input type="text" id="n1" name="n1" title="Pon el costo del producto" placeholder="Costo">
                 
         </p>
         <p>    
             
-            <font face="Comic Sans MS,arial,verdana" style="color:#FF0000" >Cantidad del producto</font>
-            <input type="text" id="n2" name="n2">
+            <strong face="Comic Sans MS,arial,verdana" style="color:#00f7ff" >Cantidad del producto</strong>
+            <input type="text" id="n2" name="n2" title="Cantidad del producto" placeholder="Cantidad">
 
         </p>
         
         <p>
             
-            <font face="Comic Sans MS,arial,verdana" style="color:#FF0000" >Calcular el total</font>
-            <input type="text" id="res">
+            <strong face="Comic Sans MS,arial,verdana" style="color:#00f7ff" >Calcular el total</strong>
+            <input type="text" id="res" placeholder="Total">
             <input type="button" name="suma" value="Resultado" onClick="valor()"><br>    
         </p>    
 
         <p>
-            <font face="Comic Sans MS,arial,verdana" style="color:#FF0000" >Compra agregada</font>
             
+            <i class="fa fa-calculator" aria-hidden="true">
+                
+            </i>
         </p>
         
             
